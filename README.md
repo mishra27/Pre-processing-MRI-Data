@@ -6,5 +6,6 @@ The first common step shared by all of the methods was that all the T1 weighted 
 Freesurfer download and install steps can be foud [here](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall)
 
 ### Condor
+[Condor script](Condor/script.sh)
 
 ### Local
