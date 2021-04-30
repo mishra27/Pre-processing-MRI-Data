@@ -26,3 +26,7 @@ same template space and had the same intensity range
 
 ## [Freesurfer output Feature Extraction for Regression Task](Feature%20Extraction%20for%20Regression)
 The extraced features and steps to extract features from output files from ADNI dataset is in ```Feature Extraction for Regression``` folder. The same steps can be followed for any T1-weighted dataset
+
+## [Freesurfer output Processing for GCNs](Cortical%20Thickness%20Graph%20Creation) 
+
+
