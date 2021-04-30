@@ -10,7 +10,7 @@
 
 
 - Use npy_to_nii.py to converty the npy files to .nii.gz file because FSL needs that format
-	- Create a file called ```npy_files.csv``` containing names of all the npy files that needs to be converted, put it in the same directory as the script. 
+	- Create a file called npy_files.csv containing names of all the npy files that needs to be converted, put it in the same directory as the script. 
 
 - Finally use fsl_affine.sh script for image registration 
 	- Place this script in the same folder as the .nii.gz files and run it

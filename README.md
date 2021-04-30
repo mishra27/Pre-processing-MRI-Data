@@ -16,7 +16,7 @@
    The ```-s``` option specifies the subject name, which you can set to whatever you want. The ```-i``` option points to the anatomical image that you will analyze; and the ```-all``` option will run all of the preprocessing steps on your data.
 
 
-## Freesurfer output Processing for CNNs and 3D-CNNs
+## [Freesurfer output Processing for CNNs and 3D-CNNs](Image%20Processing%20for%20CNNs) 
 For CNNs the normalized and skull-stripped 3D images produced by FreeSurfer recon-all command can be used. 
 - We then matched the axis and orientation of each image to that of the MNI template. 
 - Then we aligned each scan to the MNI152 T1 2mm brain template using FSL affine registration. 
