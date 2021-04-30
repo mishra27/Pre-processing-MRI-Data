@@ -19,7 +19,7 @@ class Rotate():
     def __init__(self, batch_size, trainsplit=0.5):
 
         self.datapath = ''
-        self.metapath = 'ADNI_MPRAGE_mr2pet_2_20_2020.csv'
+        self.metapath = 'ADNI.csv'
         if Path(self.datapath).exists() and Path(self.metapath).exists():
             pass
         else:
