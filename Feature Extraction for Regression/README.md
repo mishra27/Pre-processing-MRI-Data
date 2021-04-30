@@ -1,4 +1,5 @@
 # Fetching data from the FreeSurfer processed output
+After setting up the Freesurfer environment and recon-all -all command, you can run the folling commands to extract stas from Freesurfers outputs to create single tables that can be used as input in different algorithms.
 
 This script will generate text/ascii tables of freesurfer parcellation stats data (cortical stats file). More details can be found [here](https://surfer.nmr.mgh.harvard.edu/fswiki/aparcstats2table)
 
