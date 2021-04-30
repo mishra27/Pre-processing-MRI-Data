@@ -5,10 +5,10 @@ The first common step shared by all of the methods was that all the T1 weighted 
 
 Freesurfer download and install steps can be foud [here](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall)
 
-###Condor
+#### Condor
 [Condor setup](Condor%20) for Freesurfer processing
 
-###Local
+#### Local
 We will generate all of the images mentioned above with the command recon-all, which only requires a T1-weighted anatomical image with good contrast between the white matter and the grey matter. Once you Download and Install Freesurfer you can run the following command
 
 ```ruby
