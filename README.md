@@ -14,3 +14,6 @@
    ```recon-all -s sub-101 -i sub-mri-image.nii.gz -all```
  
    The ```-s``` option specifies the subject name, which you can set to whatever you want. The ```-i``` option points to the anatomical image that you will analyze; and the ```-all``` option will run all of the preprocessing steps on your data.
+
+
+## Freesurfer output Processing for CNNs and 3D-CNN
