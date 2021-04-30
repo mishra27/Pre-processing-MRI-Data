@@ -3,7 +3,7 @@ import numpy as np
 import csv
 
 
-with open('file.csv') as csv_file:
+with open('npy_files.csv') as csv_file:
     csv_reader = csv.reader(csv_file)
     line_count = 0
     for row in csv_reader:
