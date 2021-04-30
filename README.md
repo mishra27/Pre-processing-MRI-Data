@@ -1,1 +1,1 @@
-# Pre Processing T1-weighted MRI Data for different ML projects
+# Pre Processing T1-weighted MRI Data
