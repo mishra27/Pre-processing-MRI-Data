@@ -17,3 +17,9 @@
 
 
 ## Freesurfer output Processing for CNNs and 3D-CNNs
+For CNNs the normalized and skull-stripped 3D images produced by FreeSurfer recon-all command can be used. 
+- We then matched the axis and orientation of each image to that of the MNI template. 
+- Then we aligned each scan to the MNI152 T1 2mm brain template using FSL affine registration. 
+
+Finally, all the MR images were now in the
+same template space and had the same intensity range
