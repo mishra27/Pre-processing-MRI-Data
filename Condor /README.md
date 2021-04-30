@@ -5,7 +5,7 @@
 
 - In the same directory put all the .nii files you want to run the freesurfer recon-all -all command. 
 
-- Make sure you create a subject.txt file and put names of all the .nii files
+- Make sure you create a subject.txt file and put names of all the .nii files in there
 
 - Put the above two .sh and sub files in the same directory as well
 	- The .sub file request nodes with specific rquirements, transfers input files, retreives output files.
