@@ -23,3 +23,6 @@ For CNNs the normalized and skull-stripped 3D images produced by FreeSurfer reco
 
 Finally, all the MR images were now in the
 same template space and had the same intensity range
+
+## [Freesurfer output Feature Extraction for Regression Task](Feature%20Extraction%20for%20Regression)
+The extraced features from ADNI dataset is in ```Feature Extraction for Regression``` folder
