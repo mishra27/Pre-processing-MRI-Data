@@ -5,9 +5,9 @@
 
 - In the same directory put all the .nii files you want to run the freesurfer recon-all -all command. 
 
-- Make sure you create a subject.txt file and put names of all the .nii files in there
+- Make sure you create a subjects.txt file and put names of all the .nii files in there
 
 - Put the above two .sh and sub files in the same directory as well
-	- The .sub file request nodes with specific rquirements, transfers input files, retreives output files.
+	- The .sub file request nodes with specific rquirements, transfers input files, retreives output files. You can update these in this file to request different resources ```request_cpus```, ```request_memory```, ```request_disk```
 	- The .sh file contains the code that will run on each condor node requested
 
