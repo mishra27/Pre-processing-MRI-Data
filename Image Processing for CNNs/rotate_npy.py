@@ -13,13 +13,6 @@ import nibabel as nib
 from matplotlib import pyplot as plt
 
 
-
-### DIMENSION OF 3D VOLUME
-dX = 256
-dY = 256
-dZ = 256
-
-
 # vectorized is return, check reshape lines for changing this
 class Rotate():
 
@@ -54,20 +47,11 @@ class Rotate():
 
     def load_X_data(self, fnames):
 
-        #dat = np.empty((len(fnames), dX,dY, dZ), dtype=np.float32)
-
         for f,i in zip(fnames, range(0,len(fnames))):
 	 
             tmp = np.load(self.datapath+f+".npy")
             
             print(i, "  ", f+".npy " )
-
-            slice_0 = tmp[dX//2, :, :]
-            slice_1 = tmp[:, dY//2, :]
-            slice_2 = tmp[:, :, dZ//2]
-            self.show_slices([slice_0, slice_1, slice_2])
-            plt.suptitle("Center slices for image")  
-            plt.show(block=False)
 
             val = input("rotate anti-clock x time") 
 
@@ -77,15 +61,6 @@ class Rotate():
 
             while( val != "w" ):
                
-                plt.close('all')
-                #print(tmp.shape)
-                #print(tmp[0].shape)
-                #print(tmp[1].shape)
-                #print(tmp[2].shape)
-                
-                # = tmp[0]
-                #temp_dy = tmp[1]
-                #temp_dz = tmp[2]
                 val = int(val)
                 for i in range(256):
 
@@ -93,20 +68,11 @@ class Rotate():
                     tmp[i] = np.rot90(tmp[i], val)
                     tmp[i] = np.rot90(tmp[i], val)
                 
-                slice_0 = tmp[dX//2, :, :]
-                slice_1 = tmp[:, dY//2, :]
-                slice_2 = tmp[:, :, dZ//2]
-                self.show_slices([slice_0, slice_1, slice_2])
-                plt.suptitle("Center slices for image")  
-                plt.show(block=False)
- 
-
                 val = input("y to save or num to rotate") 
 
                 if val == "w":
                    np.save(f+"_rotated"+'.npy', tmp) 
 	   
-            #dat[i,:,:,:] = tmp
                   
         return 
 
