@@ -10,6 +10,7 @@
 
 - ### Local
    We will generate all of the images mentioned above with the command recon-all, which only requires a T1-weighted anatomical image with good contrast between the white matter and the grey matter. Once you Download and Install Freesurfer you can run the following command. More information [here](Freesurfer%20Processing/Local%20)
+   
    ```recon-all -s sub-101 -i sub-mri-image.nii.gz -all```
  
    The ```-s``` option specifies the subject name, which you can set to whatever you want. The ```-i``` option points to the anatomical image that you will analyze; and the ```-all``` option will run all of the preprocessing steps on your data.
