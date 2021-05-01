@@ -5,10 +5,10 @@
 
   Freesurfer download and install steps can be foud [here](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall)
 
-- ### Condor
+- ### [Condor](Freesurfer%20Processing/Condor%20)
    [Condor setup](Freesurfer%20Processing/Condor%20) for Freesurfer processing
 
-- ### Local
+- ### [Local](/Freesurfer%20Processing/Local)
    We will generate all of the images mentioned above with the command recon-all, which only requires a T1-weighted anatomical image with good contrast between the white matter and the grey matter. Once you Download and Install Freesurfer you can run the following command. More information [here](/Freesurfer%20Processing/Local)
    
    ```recon-all -s sub-101 -i sub-mri-image.nii.gz -all```
