@@ -8,4 +8,4 @@
 Now each of the subject has been resampled to fsaverage brain with 163842 vertices. To read the ```rh.thickness.mgh``` an example is shown in ```read_mgh.py``` file. The output of this will return a list of lists where the first index is the cortical thickness of the vertex 1 and so on. Therefore the size of the retured list is 163842 X 1
 
 Now you can create an adjacency matrix using the lh.pial surface from fsaverage, since all the subjects are mapped to it. The returned matrix will be of size 163842 X 163842.
-- 
+
