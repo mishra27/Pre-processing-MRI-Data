@@ -234,8 +234,8 @@ class base_model(object):
 
         for step in range(1, num_steps+1):
             
-            
-            self.state['eta'] = self.state['eta'] * configs['ETA_BETA']
+            if(step%40 == 0 or step == 1):
+                self.state['eta'] = self.state['eta'] * configs['ETA_BETA']
             # Be sure to have used all the samples before using one a second time.
             if self.random_batch_sampling_train==False:
                 batch_data, batch_labels, batch_p = hf.generate_train_batch(train_data, train_labels, p_labels, self.batch_size, 0.5, random_batch_sampling_train=False)
